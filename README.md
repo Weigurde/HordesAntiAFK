@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Horde's Anti AFK
 
 A simple and amazing Anti AFK script for GMod Zombie Survival.
