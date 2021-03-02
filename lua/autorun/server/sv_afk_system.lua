@@ -18,8 +18,6 @@ net.Receive( "NetD3botCommandControl", function( len, ply )
 	RunConsoleCommand( "d3bot", "control", ply:Name() )
 	if AFK_EnableMessages == true then
 		GAMEMODE:CenterNotifyAll({font = "ZSHUDFontSmall"}, COLOR_CYAN, ply:Name(), COLOR_WHITE, " is now ", COLOR_RED, "AFK.")
-	else
-		return
 	end
 end)
 	
@@ -27,8 +25,6 @@ net.Receive( "NetD3botCommandUnControl", function( len, ply )
 	RunConsoleCommand( "d3bot", "uncontrol", ply:Name() )
 	if AFK_EnableMessages == true then
 		GAMEMODE:CenterNotifyAll({font = "ZSHUDFontSmall"}, COLOR_CYAN, ply:Name(), COLOR_WHITE, " is back from being ", COLOR_RED, "AFK.")
-	else
-		return
 	end
 
 	local playerAng = ply:GetAngles()
@@ -42,19 +38,17 @@ hook.Add("PlayerSay", "NJKASDNJADS", function(ply, text)
 		if string.lower(text) == "!afk" or string.lower(text) == "/afk" then
 			if ply:Team() == TEAM_ZOMBIE then
 				RunConsoleCommand( "d3bot", "control", ply:Name() )
-				GAMEMODE:CenterNotifyAll({font = "ZSHUDFontSmall"}, COLOR_CYAN, ply:Name(), COLOR_WHITE, " is now ", COLOR_RED, "AFK.")
+				if AFK_EnableMessages == true then
+					GAMEMODE:CenterNotifyAll({font = "ZSHUDFontSmall"}, COLOR_CYAN, ply:Name(), COLOR_WHITE, " is now ", COLOR_RED, "AFK.")
+				end
 				ply:SendLua("AFKWarning()")
 			else
 				if AFK_EnableHumanErrMsg == true then
 					ply:CenterNotify({font = "ZSHUDFontSmall"}, COLOR_CYAN, "You ", COLOR_WHITE, "need to be a ", COLOR_RED, "zombie ", COLOR_WHITE, "to do this!")
-				else
-					return
 				end
 
 				if AFK_EnableErrorSounds == true then
 					ply:SendLua('surface.PlaySound("npc/zombie_poison/pz_alert1.wav")')
-				else
-					return
 				end
 			end
 

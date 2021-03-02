@@ -28,8 +28,6 @@ hook.Add( "Move", "AFKSystem", function( ply, mv )
                 AFKTimer = 0
                 AFKCounter = false
             end
-        else
-            return
         end
     elseif AFKCounter == false then
         if ply:KeyPressed(IN_USE) or ply:Team() == TEAM_HUMAN then
@@ -49,6 +47,7 @@ hook.Add("HUDPaint", "ShowAFKMessahe", function()
         draw.SimpleTextBlurry("You are now in AFK mode.", "ZSHUDFontBig", ScrW() / 2, ScrH() / 2 - 450, Color(200, 0, 0), TEXT_ALIGN_CENTER)
         draw.SimpleTextBlurry("While in AFK mode, you are controlled by a bot.", "ZSHUDFontSmall", ScrW() / 2, ScrH() / 2 - 375, COLOR_GRAY, TEXT_ALIGN_CENTER)
         draw.SimpleTextBlurry("Press your USE key (Default: E) to exit AFK mode.", "ZSHUDFont", ScrW() / 2, ScrH() / 2 - 300, COLOR_CYAN, TEXT_ALIGN_CENTER)
+        -- Don't remove the line below please. Thanks.
         draw.SimpleTextBlur("Created by the_horde (STEAM_0:0:105668971).", "ZSHUDFontTiny", ScrW() / 2, ScrH() / 2 - 520, COLOR_GRAY, TEXT_ALIGN_CENTER)
     end
 end)
