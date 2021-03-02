@@ -12,30 +12,30 @@ local AFK_TimeUntilAFK = 30
 local AFK_EnableAutoAFK = true
 
 hook.Add( "Move", "AFKSystem", function( ply, mv )
-    if AFK_CompleteDisable == true then
-        if AFKCounter and ply:Team() == TEAM_UNDEAD then
-            if delaytime + checkfordelay < CurTime() and !ply:IsBot() then
-                if mv:GetButtons() == 0 then
-                    AFKTimer = AFKTimer + 1
-                else
-                    AFKTimer = 0
-                end
-                delaytime = CurTime()
+    if AFKCounter and ply:Team() == TEAM_UNDEAD then
+        if delaytime + checkfordelay < CurTime() and !ply:IsBot() then
+            if mv:GetButtons() == 0 then
+                AFKTimer = AFKTimer + 1
+            else
+                AFKTimer = 0
             end
-            
+            delaytime = CurTime()
+        end
+        
+        if AFK_EnableAutoAFK == true then
             if AFKTimer == AFK_TimeUntilAFK then
                 net.Start( "NetD3botCommandControl" ) net.SendToServer()
                 AFKTimer = 0
                 AFKCounter = false
             end
-        elseif AFKCounter == false then
-            if ply:KeyPressed(IN_USE) or ply:Team() == TEAM_HUMAN then
-                net.Start( "NetD3botCommandUnControl" ) net.SendToServer()
-                AFKCounter = true
-            end
+        else
+            return
         end
-    else
-        return
+    elseif AFKCounter == false then
+        if ply:KeyPressed(IN_USE) or ply:Team() == TEAM_HUMAN then
+            net.Start( "NetD3botCommandUnControl" ) net.SendToServer()
+            AFKCounter = true
+        end
     end
 end)
 
