@@ -10,6 +10,9 @@ local AFK_EnableMessages = true
 
 -- Enable sounds from errors?
 local AFK_EnableErrorSounds = true
+
+-- Enable the error message when using !afk as a human?
+local AFK_EnableHumanErrMsg = true
 	
 net.Receive( "NetD3botCommandControl", function( len, ply )
 	RunConsoleCommand( "d3bot", "control", ply:Name() )
@@ -42,7 +45,12 @@ hook.Add("PlayerSay", "NJKASDNJADS", function(ply, text)
 				GAMEMODE:CenterNotifyAll({font = "ZSHUDFontSmall"}, COLOR_CYAN, ply:Name(), COLOR_WHITE, " is now ", COLOR_RED, "AFK.")
 				ply:SendLua("AFKWarning()")
 			else
-				ply:CenterNotify({font = "ZSHUDFontSmall"}, COLOR_CYAN, "You ", COLOR_WHITE, "need to be a ", COLOR_RED, "zombie ", COLOR_WHITE, "to do this!")
+				if AFK_EnableHumanErrMsg == true then
+					ply:CenterNotify({font = "ZSHUDFontSmall"}, COLOR_CYAN, "You ", COLOR_WHITE, "need to be a ", COLOR_RED, "zombie ", COLOR_WHITE, "to do this!")
+				else
+					return
+				end
+
 				if AFK_EnableErrorSounds == true then
 					ply:SendLua('surface.PlaySound("npc/zombie_poison/pz_alert1.wav")')
 				else
