@@ -24,7 +24,7 @@ Please do no remove this. This is my first somewhat useful addon/script for GMod
 
 ## Notice
 
-Do not leak this by downloading it and sending it to other users. Please do not attempt to steal code her and make your own version. I don't want other people 'improving' or 'fixing' this script.
+Do not leak this by downloading it and sending it to other users. Please do not attempt to steal code here and make your own version. I don't want other people 'improving' or 'fixing' this script.
 
 Currently, this respitory is private. So hello fellow contributor!
 
