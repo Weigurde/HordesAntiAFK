@@ -1,4 +1,4 @@
-# HAFK (HordeAntiAFK)
+# HordesAntiAFK
 
 A simple and amazing Anti AFK script for GMod Zombie Survival.
 
