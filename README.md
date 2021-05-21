@@ -30,4 +30,12 @@ Currently, this respitory is private. So hello fellow contributor!
 
 Do NOT attempt to change ANY files without my permission. If you fail to apply to any of these, you will be removed from being a contributor permanently.
 
-Script made for Zombie Survival
+## PLEASE READ
+
+THE SCRIPT WILL RECEIVE REGULAR UPDATES AND A CONFIG FILE SOMETIME IN THE FUTURE!
+
+MAKE SURE TO CHECK BACK AND DOWNLOAD THE NEW SCRIPT VERSIONS!
+
+IF YOU HAVE ANY QUESTIONS OR SUGGESTIONS ADD ME VIA DISCORD @ the_horde#0001
+
+THANKS FOR DOWNLOADING! <3
