@@ -1,3 +1,5 @@
+-- Made by the_horde
+
 util.AddNetworkString( "NetD3botCommandControl" )
 util.AddNetworkString( "NetD3botCommandUnControl" )
 
