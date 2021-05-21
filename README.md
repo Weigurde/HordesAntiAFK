@@ -29,3 +29,5 @@ Do not leak this by downloading it and sending it to other users. Please do not 
 Currently, this respitory is private. So hello fellow contributor!
 
 Do NOT attempt to change ANY files without my permission. If you fail to apply to any of these, you will be removed from being a contributor permanently.
+
+Script made for Zombie Survival
