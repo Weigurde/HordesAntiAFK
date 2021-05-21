@@ -1,4 +1,4 @@
-# Horde's Anti AFK
+# HAFK (HordeAntiAFK)
 
 A simple and amazing Anti AFK script for GMod Zombie Survival.
 
@@ -8,11 +8,13 @@ D3bot is needed in order for this script to work. Do NOT use AzBot, it's outdate
 
 ## Installation
 
-Download the AFK system and put inside the addons folder (garrysmod/addons). After that, restart your server and you should be good to go!
+Download the AFK script and put it inside the garrysmod addons folder (garrysmod/addons). After that, restart your server and you should be good to go!
 
 ## Config
 
 The config is extremely easy and simple. There are 2 files which you can edit, and you can find the config in both of them. Just set them to either true or false. An easy customization for a simple AFK script.
+
+A config file is not set up yet but will be in the future.
 
 ## Credit
 
