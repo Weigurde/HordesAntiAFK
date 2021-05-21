@@ -4,7 +4,7 @@ A simple and amazing Anti AFK script for GMod Zombie Survival.
 
 # THIS REQUIRES D3BOT!
 
-D3bot is needed in order for this script to work. Do NOT use AzBot, it's outdated. You can download D3bot right [here](https://github.com/Dadido3/D3bot).
+D3bot is needed in order for this script to work. Do NOT use AzBot, it's outdated. D3bot can be downloaded [here](https://github.com/Dadido3/D3bot).
 
 ## Installation
 
@@ -25,16 +25,6 @@ There is a line of code that i would not like you to remove. It's small in-game 
 Please do not remove this. This is my first somewhat useful addon/script for GMod ZS. Thank you!
 
 If I see you have removed this without permission I will ask for the script to be removed from your server.
-
-## Notice
-
-Do not leak this by downloading it and sending it to other users. Please do not attempt to steal code here and make your own version. I don't want other people 'improving' or 'fixing' this script.
-
-Currently, this respitory is private. So hello fellow contributor!
-
-Do NOT attempt to change ANY files without my permission. If you fail to apply to any of these, you will be removed from being a contributor permanently.
-
-(SCRIPT IS NO LONGER PRIVATE, IGNORE)
 
 ## PLEASE READ
 
