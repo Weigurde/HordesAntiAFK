@@ -22,7 +22,9 @@ There is a line of code that i would not like you to remove. It's small in-game 
 
 ```draw.SimpleTextBlur("Created by the_horde (STEAM_0:0:105668971).", "ZSHUDFontTiny", ScrW() / 2, ScrH() / 2 - 520, COLOR_GRAY, TEXT_ALIGN_CENTER)```
 
-Please do no remove this. This is my first somewhat useful addon/script for GMod ZS. Thank you!
+Please do not remove this. This is my first somewhat useful addon/script for GMod ZS. Thank you!
+
+If I see you have removed this without permission I will ask for the script to be removed from your server.
 
 ## Notice
 
