@@ -1,3 +1,5 @@
+-- Made by the_horde
+
 local delaytime = CurTime()
 local checkfordelay = 5
 local AFKTimer = 0
