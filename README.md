@@ -30,6 +30,8 @@ Currently, this respitory is private. So hello fellow contributor!
 
 Do NOT attempt to change ANY files without my permission. If you fail to apply to any of these, you will be removed from being a contributor permanently.
 
+(SCRIPT IS NO LONGER PRIVATE, IGNORE)
+
 ## PLEASE READ
 
 THE SCRIPT WILL RECEIVE REGULAR UPDATES AND A CONFIG FILE SOMETIME IN THE FUTURE!
